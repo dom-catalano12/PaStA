@@ -1,0 +1,158 @@
+Sender: LSF System <lsfadmin@compute-0-005>
+Subject: Job 588179: <Catalano-serial> in cluster <mghpcc_cluster1> Exited
+
+Job <Catalano-serial> was submitted from host <discovery2> by user <catalano.d> in cluster <mghpcc_cluster1>.
+Job was executed on host(s) <compute-0-005>, in queue <ht-10g>, as user <catalano.d> in cluster <mghpcc_cluster1>.
+</home/catalano.d> was used as the home directory.
+</home/catalano.d/PaStA> was used as the working directory.
+Started at Mon Feb 22 18:46:57 2016
+Results reported at Mon Feb 22 18:53:56 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J Catalano-serial
+#BSUB -o serial_output_file
+#BSUB -e error_file
+#BSUB -n 1
+#BSUB -q ht-10g
+#BSUB cwd /home/catalano.d/PaStA/Serial/
+work=/home/catalano.d/PaStA/Serial/
+cd $work
+
+echo "10000000"
+./SerialPaStA 10000000
+echo "100000000"
+./SerialPaStA 100000000
+echo "1000000000"
+./SerialPaStA 1000000000
+echo "10000000000"
+./SerialPaStA 10000000000
+
+------------------------------------------------------------
+
+Exited with exit code 20.
+
+Resource usage summary:
+
+    CPU time :               416.54 sec.
+    Max Memory :             10760 MB
+    Average Memory :         5039.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               10989 MB
+
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+10000000
+Here are the results:
+Mean: 9998.995808
+Standard Deviation: 9995.855534
+-2 stds: 0.000396
+-1 stds: 0.631543
+1 stds: 0.232593
+2 stds: 0.085707
+3 stds: 0.031497
+4 stds: 0.011553
+5 stds: 0.004242
+6 stds: 0.001549
+7 stds: 0.000584
+8 stds: 0.000211
+9 stds: 0.000078
+10 stds: 0.000030
+11 stds: 0.000010
+12 stds: 0.000004
+13 stds: 0.000002
+14 stds: 0.000001
+15 stds: 0.000000
+Time used 0.260000
+100000000
+Here are the results:
+Mean: 9998.791307
+Standard Deviation: 9999.498397
+-1 stds: 0.632090
+1 stds: 0.232596
+2 stds: 0.085530
+3 stds: 0.031468
+4 stds: 0.011584
+5 stds: 0.004256
+6 stds: 0.001564
+7 stds: 0.000576
+8 stds: 0.000212
+9 stds: 0.000078
+10 stds: 0.000029
+11 stds: 0.000011
+12 stds: 0.000004
+13 stds: 0.000001
+14 stds: 0.000000
+15 stds: 0.000000
+16 stds: 0.000000
+17 stds: 0.000000
+18 stds: 0.000000
+Time used 2.580000
+1000000000
+Here are the results:
+Mean: 9998.746817
+Standard Deviation: 9999.449298
+-1 stds: 0.632110
+1 stds: 0.232564
+2 stds: 0.085538
+3 stds: 0.031473
+4 stds: 0.011577
+5 stds: 0.004259
+6 stds: 0.001567
+7 stds: 0.000576
+8 stds: 0.000212
+9 stds: 0.000078
+10 stds: 0.000029
+11 stds: 0.000011
+12 stds: 0.000004
+13 stds: 0.000001
+14 stds: 0.000001
+15 stds: 0.000000
+16 stds: 0.000000
+17 stds: 0.000000
+18 stds: 0.000000
+19 stds: 0.000000
+20 stds: 0.000000
+21 stds: 0.000000
+Time used 25.770000
+10000000000
+Here are the results:
+Mean: 9998.754929
+Standard Deviation: 9999.375557
+-1 stds: 0.632113
+1 stds: 0.232561
+2 stds: 0.085537
+3 stds: 0.031472
+4 stds: 0.011580
+5 stds: 0.004259
+6 stds: 0.001567
+7 stds: 0.000576
+8 stds: 0.000212
+9 stds: 0.000078
+10 stds: 0.000029
+11 stds: 0.000011
+12 stds: 0.000004
+13 stds: 0.000001
+14 stds: 0.000001
+15 stds: 0.000000
+16 stds: 0.000000
+17 stds: 0.000000
+18 stds: 0.000000
+19 stds: 0.000000
+20 stds: 0.000000
+21 stds: 0.000000
+22 stds: 0.000000
+Time used 36.160000
+
+
+PS:
+
+Read file <error_file> for stderr output of this job.
+
