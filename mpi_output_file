@@ -1,0 +1,221 @@
+Sender: LSF System <lsfadmin@compute-0-005>
+Subject: Job 600607: <Catalano-mpi> in cluster <mghpcc_cluster1> Done
+
+Job <Catalano-mpi> was submitted from host <discovery2> by user <catalano.d> in cluster <mghpcc_cluster1>.
+Job was executed on host(s) <8*compute-0-005>, in queue <ht-10g>, as user <catalano.d> in cluster <mghpcc_cluster1>.
+</home/catalano.d> was used as the home directory.
+</home/catalano.d/PaStA> was used as the working directory.
+Started at Thu Mar 10 15:47:24 2016
+Results reported at Thu Mar 10 16:07:25 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J Catalano-mpi
+#BSUB -o mpi_output_file
+#BSUB -e error_file
+#BSUB -n 8
+#BSUB -q ht-10g
+#BSUB cwd /home/catalano.d/PaStA/MPI/
+work=/home/catalano.d/PaStA/MPI/
+cd $work
+tempfile1=hostlistrun
+tempfile2=hostlist-tcp
+echo $LSB_MCPU_HOSTS > $tempfile1
+declare -a hosts
+read -a hosts < ${tempfile1}
+for((i=0; i<${#hosts[@]}; i += 2)) ;
+	do
+		HOST=${hosts[$i]}
+		CORE=${hosts[(($i+1))]}
+		echo $HOST:$CORE >> $tempfile2
+done
+
+echo "MPI 2 workers"
+mpirun -np 2 -prot -TCP -lsf ./MPIPaStA
+
+
+echo "MPI 4 workers"
+mpirun -np 4 -prot -TCP -lsf ./MPIPaStA
+
+echo "MPI 8 workers"
+mpirun -np 8 -prot -TCP -lsf ./MPIPaStA
+
+echo "MPI 16 workers"
+mpirun -np 16 -prot -TCP -lsf ./MPIPaStA
+
+echo "MPI 32 workers"
+mpirun -np 32 -prot -TCP -lsf ./MPIPaStA
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               13959.13 sec.
+    Max Memory :             15320 MB
+    Average Memory :         6447.40 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               256446 MB
+
+    Max Processes :          37
+    Max Threads :            38
+
+The output (if any) follows:
+
+MPI 2 workers
+Host 0 -- ip 10.100.8.45 -- ranks 0 - 1
+
+ host | 0
+======|======
+    0 : SHM
+
+ Prot -  All Intra-node communication is: SHM
+
+OpenMP,6,0.030814
+OpenMP,6,0.028169
+OpenMP,6,0.028124
+OpenMP,6,0.028039
+OpenMP,6,0.028102
+OpenMP,7,0.302703
+OpenMP,7,0.293083
+OpenMP,7,0.292602
+OpenMP,7,0.293028
+OpenMP,7,0.292595
+OpenMP,8,3.036462
+OpenMP,8,2.930866
+OpenMP,8,3.217534
+OpenMP,8,2.930204
+OpenMP,8,2.926935
+OpenMP,9,30.923788
+OpenMP,9,30.209717
+OpenMP,9,30.886669
+OpenMP,9,31.565031
+OpenMP,9,30.600870
+MPI 4 workers
+Host 0 -- ip 10.100.8.45 -- ranks 0 - 3
+
+ host | 0
+======|======
+    0 : SHM
+
+ Prot -  All Intra-node communication is: SHM
+
+OpenMP,6,0.014567
+OpenMP,6,0.012474
+OpenMP,6,0.012211
+OpenMP,6,0.012173
+OpenMP,6,0.012187
+OpenMP,7,0.177272
+OpenMP,7,0.243234
+OpenMP,7,0.233831
+OpenMP,7,0.110823
+OpenMP,7,0.110805
+OpenMP,8,1.202303
+OpenMP,8,1.091775
+OpenMP,8,1.112571
+OpenMP,8,1.134618
+OpenMP,8,1.129617
+OpenMP,9,13.353419
+OpenMP,9,12.009769
+OpenMP,9,12.016871
+OpenMP,9,12.019061
+OpenMP,9,12.016156
+MPI 8 workers
+Host 0 -- ip 10.100.8.45 -- ranks 0 - 7
+
+ host | 0
+======|======
+    0 : SHM
+
+ Prot -  All Intra-node communication is: SHM
+
+OpenMP,6,0.010684
+OpenMP,6,0.005888
+OpenMP,6,0.005626
+OpenMP,6,0.005623
+OpenMP,6,0.005616
+OpenMP,7,0.075216
+OpenMP,7,0.063584
+OpenMP,7,0.063675
+OpenMP,7,0.063535
+OpenMP,7,0.063511
+OpenMP,8,0.743160
+OpenMP,8,0.634577
+OpenMP,8,0.634379
+OpenMP,8,0.639649
+OpenMP,8,0.635264
+OpenMP,9,7.324896
+OpenMP,9,6.348577
+OpenMP,9,6.348276
+OpenMP,9,6.348300
+OpenMP,9,6.352411
+MPI 16 workers
+Host 0 -- ip 10.100.8.45 -- ranks 0 - 15
+
+ host | 0
+======|======
+    0 : SHM
+
+ Prot -  All Intra-node communication is: SHM
+
+OpenMP,6,0.009032
+OpenMP,6,0.005115
+OpenMP,6,0.004975
+OpenMP,6,0.004880
+OpenMP,6,0.004832
+OpenMP,7,0.068151
+OpenMP,7,0.051928
+OpenMP,7,0.051778
+OpenMP,7,0.051915
+OpenMP,7,0.052060
+OpenMP,8,0.640945
+OpenMP,8,0.520773
+OpenMP,8,0.520416
+OpenMP,8,0.520944
+OpenMP,8,0.520195
+OpenMP,9,6.377666
+OpenMP,9,5.186217
+OpenMP,9,5.040713
+OpenMP,9,4.813966
+OpenMP,9,4.335352
+MPI 32 workers
+Host 0 -- ip 10.100.8.45 -- ranks 0 - 31
+
+ host | 0
+======|======
+    0 : SHM
+
+ Prot -  All Intra-node communication is: SHM
+
+OpenMP,6,0.037675
+OpenMP,6,0.031237
+OpenMP,6,0.031167
+OpenMP,6,0.032187
+OpenMP,6,0.024051
+OpenMP,7,0.091734
+OpenMP,7,0.067516
+OpenMP,7,0.060589
+OpenMP,7,0.063702
+OpenMP,7,0.059066
+OpenMP,8,0.690275
+OpenMP,8,0.519832
+OpenMP,8,0.531311
+OpenMP,8,0.520701
+OpenMP,8,0.550228
+OpenMP,9,5.807313
+OpenMP,9,4.446408
+OpenMP,9,4.616027
+OpenMP,9,3.623678
+OpenMP,9,4.524694
+
+
+PS:
+
+Read file <error_file> for stderr output of this job.
+

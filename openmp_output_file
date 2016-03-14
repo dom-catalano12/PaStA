@@ -1,0 +1,172 @@
+Sender: LSF System <lsfadmin@compute-0-006>
+Subject: Job 600161: <Catalano-openmp> in cluster <mghpcc_cluster1> Exited
+
+Job <Catalano-openmp> was submitted from host <discovery2> by user <catalano.d> in cluster <mghpcc_cluster1>.
+Job was executed on host(s) <compute-0-006>, in queue <ht-10g>, as user <catalano.d> in cluster <mghpcc_cluster1>.
+</home/catalano.d> was used as the home directory.
+</home/catalano.d/PaStA> was used as the working directory.
+Started at Thu Mar 10 10:52:19 2016
+Results reported at Thu Mar 10 11:07:39 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J Catalano-openmp
+#BSUB -o openmp_output_file
+#BSUB -e error_file
+#BSUB -n 1
+#BSUB -q ht-10g
+#BSUB cwd /home/catalano.d/PaStA/OpenMP/
+work=/home/catalano.d/PaStA/OpenMP/
+cd $work
+
+echo "OpenMP, 2 Threads"
+export OMP_NUM_THREADS=2
+./OpenMPPaStA
+
+echo "OpenMP, 4 Threads"
+export OMP_NUM_THREADS=4
+./OpenMPPaStA
+
+echo "OpenMP, 8 Threads"
+export OMP_NUM_THREADS=8
+./OpenMPPaStA
+
+echo "OpenMP, 16 Threads"
+export OMP_NUM_THREADS=16
+./OpenMPPaStA
+
+echo "OpenMP, 32 Threads"
+export OMP_NUM_THREADS=32
+./OpenMPPaStA
+------------------------------------------------------------
+
+Exited with exit code 18.
+
+Resource usage summary:
+
+    CPU time :               1931.72 sec.
+    Max Memory :             7633 MB
+    Average Memory :         4584.16 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               7898 MB
+
+    Max Processes :          4
+    Max Threads :            20
+
+The output (if any) follows:
+
+OpenMP, 2 Threads
+OpenMP,6,0.037227
+OpenMP,6,0.036879
+OpenMP,6,0.036906
+OpenMP,6,0.036953
+OpenMP,6,0.036912
+OpenMP,7,0.453364
+OpenMP,7,0.376118
+OpenMP,7,0.166265
+OpenMP,7,0.173077
+OpenMP,7,0.175295
+OpenMP,8,1.684916
+OpenMP,8,1.668137
+OpenMP,8,1.724629
+OpenMP,8,1.707640
+OpenMP,8,1.711958
+OpenMP,9,17.225850
+OpenMP,9,17.234049
+OpenMP,9,17.281291
+OpenMP,9,16.977979
+OpenMP,9,16.987202
+OpenMP, 4 Threads
+OpenMP,6,0.008559
+OpenMP,6,0.008341
+OpenMP,6,0.008301
+OpenMP,6,0.008286
+OpenMP,6,0.008282
+OpenMP,7,0.084140
+OpenMP,7,0.083866
+OpenMP,7,0.083924
+OpenMP,7,0.088297
+OpenMP,7,0.103332
+OpenMP,8,0.892893
+OpenMP,8,0.838832
+OpenMP,8,0.839094
+OpenMP,8,0.846400
+OpenMP,8,0.845388
+OpenMP,9,8.519743
+OpenMP,9,9.586330
+OpenMP,9,9.248888
+OpenMP,9,8.852780
+OpenMP,9,9.069802
+OpenMP, 8 Threads
+OpenMP,6,0.004848
+OpenMP,6,0.004460
+OpenMP,6,0.004453
+OpenMP,6,0.004446
+OpenMP,6,0.004458
+OpenMP,7,0.045416
+OpenMP,7,0.045421
+OpenMP,7,0.045388
+OpenMP,7,0.045414
+OpenMP,7,0.045340
+OpenMP,8,0.452921
+OpenMP,8,0.453540
+OpenMP,8,0.452496
+OpenMP,8,0.451991
+OpenMP,8,0.451772
+OpenMP,9,5.051604
+OpenMP,9,5.363019
+OpenMP,9,5.426589
+OpenMP,9,6.265449
+OpenMP,9,5.106026
+OpenMP, 16 Threads
+OpenMP,6,0.005232
+OpenMP,6,0.004670
+OpenMP,6,0.004670
+OpenMP,6,0.004654
+OpenMP,6,0.004659
+OpenMP,7,0.046669
+OpenMP,7,0.046687
+OpenMP,7,0.046684
+OpenMP,7,0.046615
+OpenMP,7,0.046605
+OpenMP,8,0.466884
+OpenMP,8,0.360297
+OpenMP,8,0.339524
+OpenMP,8,0.339433
+OpenMP,8,0.339395
+OpenMP,9,2.507665
+OpenMP,9,2.381532
+OpenMP,9,2.387480
+OpenMP,9,2.381486
+OpenMP,9,2.381517
+OpenMP, 32 Threads
+OpenMP,6,0.031340
+OpenMP,6,0.019953
+OpenMP,6,0.029993
+OpenMP,6,0.019998
+OpenMP,6,0.030162
+OpenMP,7,0.039995
+OpenMP,7,0.050989
+OpenMP,7,0.039988
+OpenMP,7,0.045774
+OpenMP,7,0.044982
+OpenMP,8,0.314983
+OpenMP,8,0.286039
+OpenMP,8,0.274988
+OpenMP,8,0.270982
+OpenMP,8,0.296093
+OpenMP,9,2.372100
+OpenMP,9,2.461978
+OpenMP,9,1.912759
+OpenMP,9,1.835271
+OpenMP,9,1.839590
+
+
+PS:
+
+Read file <error_file> for stderr output of this job.
+

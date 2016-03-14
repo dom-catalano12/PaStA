@@ -8,12 +8,14 @@
 #include <math.h>
 #include <time.h>
 
+double runTest(double *v, int setSize, double min, double max, int suppressOutput);
+
 int main(int argc, char *argv[])
 {
 
-	size_t setSize = parse_args(argc, argv);
+	size_t setSize = 1000000000;
 	PutSeed(10);
-	double v[setSize];
+	double v[1000000000];
 
 	double min = 1000000000000000;
 	double max = -1000000000000000;
@@ -26,11 +28,24 @@ int main(int argc, char *argv[])
 		if(v[i] > max) max = v[i]; 
 	}
 
+  double time;
 
-        clock_t start, end;
-        double cpu_time_used;
-        start = clock();
+  int m, run;
+  for (m = 6; m < 10; m++ ) {
+    for (run = 0; run < 5; run++ ){
+      time = runTest(v, pow(10, m), min, max, 1);
+      printf("Serial,%d,%f\n",m, time);
+    }
+  }
 
+}
+
+double runTest(double *v, int setSize, double min, double max, int suppressOutput) {
+  clock_t start, end;
+  double cpu_time_used;
+  start = clock();
+
+  int i;
 	int n = 0;
 	double sum = 0;
 	double mean = 0;
@@ -70,22 +85,25 @@ int main(int argc, char *argv[])
 		}		
 	}
 
-	
+  if(suppressOutput == 0) {	
 
-	printf("Here are the results:\n");
-	printf("Mean: %f\nStandard Deviation: %f\n", mean, std);
+  	printf("Here are the results:\n");
+  	printf("Mean: %f\nStandard Deviation: %f\n", mean, std);
+  
+  	for (i = 0; i <= bins; i++) {
+  		if (i <= offset) {
+  			printf("%d stds: %f\n", (i - offset - 1),  histogram[i] / setSize);
+  		}
+  		else
+  		{
+  			printf("%d stds: %f\n", i - offset, histogram[i] / setSize);
+  		}
+  	}
 
-	for (i = 0; i <= bins; i++) {
-		if (i <= offset) {
-			printf("%d stds: %f\n", (i - offset - 1),  histogram[i] / setSize);
-		}
-		else
-		{
-			printf("%d stds: %f\n", i - offset, histogram[i] / setSize);
-		}
-	}
-
-	end = clock();
-	cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
-	printf("Time used %f\n", cpu_time_used);
+   }
+   
+     
+  	end = clock();
+  	cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
+  	return cpu_time_used;
 }

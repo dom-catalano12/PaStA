@@ -7,11 +7,6 @@
 work=/home/catalano.d/PaStA/Serial/
 cd $work
 
-echo "10000000"
-./SerialPaStA 10000000
-echo "100000000"
-./SerialPaStA 100000000
-echo "1000000000"
-./SerialPaStA 1000000000
-echo "10000000000"
-./SerialPaStA 10000000000
+echo "Serial"
+./SerialPaStA 
+
