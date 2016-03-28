@@ -1,12 +1,12 @@
-Sender: LSF System <lsfadmin@compute-0-006>
-Subject: Job 600161: <Catalano-openmp> in cluster <mghpcc_cluster1> Exited
+Sender: LSF System <lsfadmin@compute-0-004>
+Subject: Job 602034: <Catalano-openmp> in cluster <mghpcc_cluster1> Exited
 
 Job <Catalano-openmp> was submitted from host <discovery2> by user <catalano.d> in cluster <mghpcc_cluster1>.
-Job was executed on host(s) <compute-0-006>, in queue <ht-10g>, as user <catalano.d> in cluster <mghpcc_cluster1>.
+Job was executed on host(s) <compute-0-004>, in queue <ht-10g>, as user <catalano.d> in cluster <mghpcc_cluster1>.
 </home/catalano.d> was used as the home directory.
 </home/catalano.d/PaStA> was used as the working directory.
-Started at Thu Mar 10 10:52:19 2016
-Results reported at Thu Mar 10 11:07:39 2016
+Started at Sat Mar 12 13:43:41 2016
+Results reported at Sat Mar 12 13:58:44 2016
 
 Your job looked like:
 
@@ -46,124 +46,224 @@ Exited with exit code 18.
 
 Resource usage summary:
 
-    CPU time :               1931.72 sec.
+    CPU time :               1946.32 sec.
     Max Memory :             7633 MB
-    Average Memory :         4584.16 MB
+    Average Memory :         4439.63 MB
     Total Requested Memory : -
     Delta Memory :           -
     (Delta: the difference between total requested memory and actual max usage.)
-    Max Swap :               7898 MB
+    Max Swap :               7882 MB
 
     Max Processes :          4
-    Max Threads :            20
+    Max Threads :            12
 
 The output (if any) follows:
 
 OpenMP, 2 Threads
-OpenMP,6,0.037227
-OpenMP,6,0.036879
-OpenMP,6,0.036906
-OpenMP,6,0.036953
-OpenMP,6,0.036912
-OpenMP,7,0.453364
-OpenMP,7,0.376118
-OpenMP,7,0.166265
-OpenMP,7,0.173077
-OpenMP,7,0.175295
-OpenMP,8,1.684916
-OpenMP,8,1.668137
-OpenMP,8,1.724629
-OpenMP,8,1.707640
-OpenMP,8,1.711958
-OpenMP,9,17.225850
-OpenMP,9,17.234049
-OpenMP,9,17.281291
-OpenMP,9,16.977979
-OpenMP,9,16.987202
+OpenMP,2,0.000232
+OpenMP,2,0.000018
+OpenMP,2,0.000016
+OpenMP,2,0.000015
+OpenMP,2,0.000015
+OpenMP,3,0.000052
+OpenMP,3,0.000050
+OpenMP,3,0.000046
+OpenMP,3,0.000047
+OpenMP,3,0.000046
+OpenMP,4,0.000391
+OpenMP,4,0.000394
+OpenMP,4,0.000385
+OpenMP,4,0.000390
+OpenMP,4,0.000382
+OpenMP,5,0.003742
+OpenMP,5,0.003721
+OpenMP,5,0.003737
+OpenMP,5,0.003733
+OpenMP,5,0.003726
+OpenMP,6,0.037067
+OpenMP,6,0.036916
+OpenMP,6,0.036923
+OpenMP,6,0.036947
+OpenMP,6,0.036903
+OpenMP,7,0.354966
+OpenMP,7,0.299245
+OpenMP,7,0.219986
+OpenMP,7,0.162198
+OpenMP,7,0.162141
+OpenMP,8,1.623451
+OpenMP,8,1.623207
+OpenMP,8,1.635504
+OpenMP,8,1.635348
+OpenMP,8,1.650875
+OpenMP,9,16.360239
+OpenMP,9,16.996794
+OpenMP,9,16.273566
+OpenMP,9,16.379614
+OpenMP,9,16.381981
 OpenMP, 4 Threads
-OpenMP,6,0.008559
-OpenMP,6,0.008341
-OpenMP,6,0.008301
-OpenMP,6,0.008286
-OpenMP,6,0.008282
-OpenMP,7,0.084140
-OpenMP,7,0.083866
-OpenMP,7,0.083924
-OpenMP,7,0.088297
-OpenMP,7,0.103332
-OpenMP,8,0.892893
-OpenMP,8,0.838832
-OpenMP,8,0.839094
-OpenMP,8,0.846400
-OpenMP,8,0.845388
-OpenMP,9,8.519743
-OpenMP,9,9.586330
-OpenMP,9,9.248888
-OpenMP,9,8.852780
-OpenMP,9,9.069802
+OpenMP,2,0.000253
+OpenMP,2,0.000038
+OpenMP,2,0.000021
+OpenMP,2,0.000021
+OpenMP,2,0.000022
+OpenMP,3,0.000039
+OpenMP,3,0.000039
+OpenMP,3,0.000034
+OpenMP,3,0.000037
+OpenMP,3,0.000036
+OpenMP,4,0.000211
+OpenMP,4,0.000211
+OpenMP,4,0.000211
+OpenMP,4,0.000201
+OpenMP,4,0.000201
+OpenMP,5,0.001889
+OpenMP,5,0.001870
+OpenMP,5,0.001875
+OpenMP,5,0.001874
+OpenMP,5,0.001881
+OpenMP,6,0.018499
+OpenMP,6,0.018469
+OpenMP,6,0.018437
+OpenMP,6,0.018451
+OpenMP,6,0.018447
+OpenMP,7,0.187568
+OpenMP,7,0.183955
+OpenMP,7,0.160098
+OpenMP,7,0.160108
+OpenMP,7,0.160036
+OpenMP,8,0.814500
+OpenMP,8,0.812912
+OpenMP,8,0.810772
+OpenMP,8,0.810908
+OpenMP,8,0.814240
+OpenMP,9,8.135022
+OpenMP,9,8.593792
+OpenMP,9,8.879391
+OpenMP,9,9.571418
+OpenMP,9,9.841663
 OpenMP, 8 Threads
-OpenMP,6,0.004848
-OpenMP,6,0.004460
-OpenMP,6,0.004453
-OpenMP,6,0.004446
-OpenMP,6,0.004458
-OpenMP,7,0.045416
-OpenMP,7,0.045421
-OpenMP,7,0.045388
-OpenMP,7,0.045414
-OpenMP,7,0.045340
-OpenMP,8,0.452921
-OpenMP,8,0.453540
-OpenMP,8,0.452496
-OpenMP,8,0.451991
-OpenMP,8,0.451772
-OpenMP,9,5.051604
-OpenMP,9,5.363019
-OpenMP,9,5.426589
-OpenMP,9,6.265449
-OpenMP,9,5.106026
+OpenMP,2,0.000368
+OpenMP,2,0.000031
+OpenMP,2,0.000028
+OpenMP,2,0.000028
+OpenMP,2,0.000032
+OpenMP,3,0.000037
+OpenMP,3,0.000037
+OpenMP,3,0.000034
+OpenMP,3,0.000037
+OpenMP,3,0.000036
+OpenMP,4,0.000124
+OpenMP,4,0.000116
+OpenMP,4,0.000117
+OpenMP,4,0.000118
+OpenMP,4,0.000127
+OpenMP,5,0.000967
+OpenMP,5,0.000958
+OpenMP,5,0.000954
+OpenMP,5,0.000955
+OpenMP,5,0.000958
+OpenMP,6,0.009312
+OpenMP,6,0.009380
+OpenMP,6,0.009270
+OpenMP,6,0.009281
+OpenMP,6,0.009270
+OpenMP,7,0.093462
+OpenMP,7,0.093610
+OpenMP,7,0.093786
+OpenMP,7,0.093561
+OpenMP,7,0.093527
+OpenMP,8,0.455816
+OpenMP,8,0.454312
+OpenMP,8,0.454287
+OpenMP,8,0.454344
+OpenMP,8,0.454210
+OpenMP,9,4.545070
+OpenMP,9,5.164999
+OpenMP,9,4.933722
+OpenMP,9,4.783883
+OpenMP,9,4.693238
 OpenMP, 16 Threads
-OpenMP,6,0.005232
-OpenMP,6,0.004670
-OpenMP,6,0.004670
-OpenMP,6,0.004654
-OpenMP,6,0.004659
-OpenMP,7,0.046669
-OpenMP,7,0.046687
-OpenMP,7,0.046684
-OpenMP,7,0.046615
-OpenMP,7,0.046605
-OpenMP,8,0.466884
-OpenMP,8,0.360297
-OpenMP,8,0.339524
-OpenMP,8,0.339433
-OpenMP,8,0.339395
-OpenMP,9,2.507665
-OpenMP,9,2.381532
-OpenMP,9,2.387480
-OpenMP,9,2.381486
-OpenMP,9,2.381517
+OpenMP,2,0.000602
+OpenMP,2,0.000061
+OpenMP,2,0.000062
+OpenMP,2,0.000062
+OpenMP,2,0.000057
+OpenMP,3,0.000071
+OpenMP,3,0.000076
+OpenMP,3,0.000076
+OpenMP,3,0.000071
+OpenMP,3,0.000071
+OpenMP,4,0.000124
+OpenMP,4,0.000114
+OpenMP,4,0.000124
+OpenMP,4,0.000118
+OpenMP,4,0.000108
+OpenMP,5,0.000533
+OpenMP,5,0.000545
+OpenMP,5,0.000526
+OpenMP,5,0.000524
+OpenMP,5,0.000535
+OpenMP,6,0.004696
+OpenMP,6,0.004677
+OpenMP,6,0.004681
+OpenMP,6,0.004684
+OpenMP,6,0.004664
+OpenMP,7,0.046711
+OpenMP,7,0.046730
+OpenMP,7,0.046724
+OpenMP,7,0.046753
+OpenMP,7,0.046730
+OpenMP,8,0.444158
+OpenMP,8,0.356195
+OpenMP,8,0.346353
+OpenMP,8,0.308696
+OpenMP,8,0.271044
+OpenMP,9,3.198773
+OpenMP,9,3.178245
+OpenMP,9,3.305771
+OpenMP,9,3.341317
+OpenMP,9,3.431162
 OpenMP, 32 Threads
-OpenMP,6,0.031340
-OpenMP,6,0.019953
-OpenMP,6,0.029993
-OpenMP,6,0.019998
-OpenMP,6,0.030162
-OpenMP,7,0.039995
-OpenMP,7,0.050989
-OpenMP,7,0.039988
-OpenMP,7,0.045774
-OpenMP,7,0.044982
-OpenMP,8,0.314983
-OpenMP,8,0.286039
-OpenMP,8,0.274988
-OpenMP,8,0.270982
-OpenMP,8,0.296093
-OpenMP,9,2.372100
-OpenMP,9,2.461978
-OpenMP,9,1.912759
-OpenMP,9,1.835271
-OpenMP,9,1.839590
+OpenMP,2,0.035210
+OpenMP,2,0.020962
+OpenMP,2,0.029990
+OpenMP,2,0.020003
+OpenMP,2,0.028832
+OpenMP,3,0.019981
+OpenMP,3,0.023169
+OpenMP,3,0.024989
+OpenMP,3,0.024997
+OpenMP,3,0.024968
+OpenMP,4,0.024983
+OpenMP,4,0.025003
+OpenMP,4,0.024998
+OpenMP,4,0.024990
+OpenMP,4,0.025005
+OpenMP,5,0.025006
+OpenMP,5,0.024988
+OpenMP,5,0.024994
+OpenMP,5,0.024994
+OpenMP,5,0.024996
+OpenMP,6,0.025832
+OpenMP,6,0.024997
+OpenMP,6,0.024162
+OpenMP,6,0.025003
+OpenMP,6,0.024991
+OpenMP,7,0.049993
+OpenMP,7,0.049986
+OpenMP,7,0.050002
+OpenMP,7,0.050809
+OpenMP,7,0.049991
+OpenMP,8,0.310157
+OpenMP,8,0.331987
+OpenMP,8,0.335002
+OpenMP,8,0.282989
+OpenMP,8,0.270809
+OpenMP,9,2.339154
+OpenMP,9,2.189051
+OpenMP,9,1.833389
+OpenMP,9,1.821142
+OpenMP,9,1.821574
 
 
 PS:

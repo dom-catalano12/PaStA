@@ -1,3 +1,4 @@
+//Compile gcc -fopenmp -o OpenMPPaStA OpenMPPaStA.c rngs.o rvgs.o -lm
 
 
 #include "rngs.h"

@@ -1,0 +1,161 @@
+Sender: LSF System <lsfadmin@compute-2-137>
+Subject: Job 614112: <Catalano-CUDA> in cluster <mghpcc_cluster1> Done
+
+Job <Catalano-CUDA> was submitted from host <discovery2> by user <catalano.d> in cluster <mghpcc_cluster1>.
+Job was executed on host(s) <compute-2-137>, in queue <par-gpu>, as user <catalano.d> in cluster <mghpcc_cluster1>.
+</home/catalano.d> was used as the home directory.
+</home/catalano.d/PaStA> was used as the working directory.
+Started at Mon Mar 28 18:50:41 2016
+Results reported at Mon Mar 28 19:02:04 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J Catalano-CUDA
+#BSUB -q par-gpu
+#BSUB -o cuda_all_output_file
+#BSUB -e error_file
+#BSUB -n 1
+#BSUB -R span[ptile=32]
+work=/home/catalano.d/PaStA
+cd $work
+
+echo 'CUDA 1.0-Strided without GPU Hist Creation'
+CUDA1.0/CUDA1.0PaStA
+
+echo 'CUDA 1.1-Strided with GPU Hist Creation'
+CUDA1.1/CUDA1.1PaStA
+
+echo 'CUDA 1.0-Unrolled without GPU Hist Creation'
+CUDA2.0/CUDA2.0PaStA
+
+echo 'CUDA 1.0-Unrolled without GPU Hist Creation'
+CUDA2.1/CUDA2.1PaStA
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               681.94 sec.
+    Max Memory :             3895 MB
+    Average Memory :         3312.83 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               163956 MB
+
+    Max Processes :          4
+    Max Threads :            6
+
+The output (if any) follows:
+
+CUDA 1.0-Strided without GPU Hist Creation
+CUDA,6,0.026502
+CUDA,6,0.026540
+CUDA,6,0.026508
+CUDA,6,0.022909
+CUDA,6,0.021748
+CUDA,6,0.021654
+CUDA,7,0.129103
+CUDA,7,0.129034
+CUDA,7,0.129441
+CUDA,7,0.128847
+CUDA,7,0.129132
+CUDA,7,0.129512
+CUDA,8,1.290277
+CUDA,8,1.286721
+CUDA,8,1.290281
+CUDA,8,1.286998
+CUDA,8,1.287664
+CUDA,8,1.289526
+CUDA,9,12.954312
+CUDA,9,12.946220
+CUDA,9,12.925590
+CUDA,9,12.929650
+CUDA,9,12.938488
+CUDA,9,12.953827
+CUDA 1.1-Strided with GPU Hist Creation
+CUDA,6,0.001616
+CUDA,6,0.001630
+CUDA,6,0.001632
+CUDA,6,0.001616
+CUDA,6,0.001631
+CUDA,6,0.001619
+CUDA,7,0.014751
+CUDA,7,0.014736
+CUDA,7,0.014758
+CUDA,7,0.014759
+CUDA,7,0.014763
+CUDA,7,0.014815
+CUDA,8,0.146989
+CUDA,8,0.146950
+CUDA,8,0.146956
+CUDA,8,0.147024
+CUDA,8,0.146994
+CUDA,8,0.147012
+CUDA,9,1.556260
+CUDA,9,1.556147
+CUDA,9,1.556466
+CUDA,9,1.556691
+CUDA,9,1.556110
+CUDA,9,1.556097
+CUDA 1.0-Unrolled without GPU Hist Creation
+CUDA,6,0.028579
+CUDA,6,0.028545
+CUDA,6,0.028536
+CUDA,6,0.028572
+CUDA,6,0.028602
+CUDA,6,0.028620
+CUDA,7,0.127890
+CUDA,7,0.128182
+CUDA,7,0.127914
+CUDA,7,0.127879
+CUDA,7,0.127900
+CUDA,7,0.128007
+CUDA,8,1.276175
+CUDA,8,1.275692
+CUDA,8,1.276696
+CUDA,8,1.275582
+CUDA,8,1.276169
+CUDA,8,1.276298
+CUDA,9,12.814183
+CUDA,9,12.801428
+CUDA,9,12.783873
+CUDA,9,12.814004
+CUDA,9,12.819542
+CUDA,9,12.816792
+CUDA 1.0-Unrolled without GPU Hist Creation
+CUDA,6,0.001450
+CUDA,6,0.001453
+CUDA,6,0.001448
+CUDA,6,0.001447
+CUDA,6,0.001451
+CUDA,6,0.001450
+CUDA,7,0.012554
+CUDA,7,0.012515
+CUDA,7,0.012552
+CUDA,7,0.012554
+CUDA,7,0.012560
+CUDA,7,0.012525
+CUDA,8,0.122725
+CUDA,8,0.122700
+CUDA,8,0.122757
+CUDA,8,0.122737
+CUDA,8,0.122662
+CUDA,8,0.122684
+CUDA,9,1.310965
+CUDA,9,1.310300
+CUDA,9,1.311106
+CUDA,9,1.310821
+CUDA,9,1.310532
+CUDA,9,1.311442
+
+
+PS:
+
+Read file <error_file> for stderr output of this job.
+

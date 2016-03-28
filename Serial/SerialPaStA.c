@@ -1,3 +1,4 @@
+//Compile gcc -o SerialPaStA SerialPaStA.c rngs.o rvgs.o -lm
 
 
 #include "rngs.h"

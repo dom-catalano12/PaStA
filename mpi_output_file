@@ -1,12 +1,12 @@
-Sender: LSF System <lsfadmin@compute-0-005>
-Subject: Job 600607: <Catalano-mpi> in cluster <mghpcc_cluster1> Done
+Sender: LSF System <lsfadmin@compute-0-007>
+Subject: Job 602036: <Catalano-mpi> in cluster <mghpcc_cluster1> Done
 
 Job <Catalano-mpi> was submitted from host <discovery2> by user <catalano.d> in cluster <mghpcc_cluster1>.
-Job was executed on host(s) <8*compute-0-005>, in queue <ht-10g>, as user <catalano.d> in cluster <mghpcc_cluster1>.
+Job was executed on host(s) <8*compute-0-007>, in queue <ht-10g>, as user <catalano.d> in cluster <mghpcc_cluster1>.
 </home/catalano.d> was used as the home directory.
 </home/catalano.d/PaStA> was used as the working directory.
-Started at Thu Mar 10 15:47:24 2016
-Results reported at Thu Mar 10 16:07:25 2016
+Started at Sat Mar 12 13:46:09 2016
+Results reported at Sat Mar 12 14:05:51 2016
 
 Your job looked like:
 
@@ -55,9 +55,9 @@ Successfully completed.
 
 Resource usage summary:
 
-    CPU time :               13959.13 sec.
-    Max Memory :             15320 MB
-    Average Memory :         6447.40 MB
+    CPU time :               14196.37 sec.
+    Max Memory :             15385 MB
+    Average Memory :         6698.34 MB
     Total Requested Memory : -
     Delta Memory :           -
     (Delta: the difference between total requested memory and actual max usage.)
@@ -69,7 +69,7 @@ Resource usage summary:
 The output (if any) follows:
 
 MPI 2 workers
-Host 0 -- ip 10.100.8.45 -- ranks 0 - 1
+Host 0 -- ip 10.100.8.47 -- ranks 0 - 1
 
  host | 0
 ======|======
@@ -77,28 +77,48 @@ Host 0 -- ip 10.100.8.45 -- ranks 0 - 1
 
  Prot -  All Intra-node communication is: SHM
 
-OpenMP,6,0.030814
-OpenMP,6,0.028169
-OpenMP,6,0.028124
-OpenMP,6,0.028039
-OpenMP,6,0.028102
-OpenMP,7,0.302703
-OpenMP,7,0.293083
-OpenMP,7,0.292602
-OpenMP,7,0.293028
-OpenMP,7,0.292595
-OpenMP,8,3.036462
-OpenMP,8,2.930866
-OpenMP,8,3.217534
-OpenMP,8,2.930204
-OpenMP,8,2.926935
-OpenMP,9,30.923788
-OpenMP,9,30.209717
-OpenMP,9,30.886669
-OpenMP,9,31.565031
-OpenMP,9,30.600870
+OpenMP,2,0.000108
+OpenMP,2,0.000035
+OpenMP,2,0.000009
+OpenMP,2,0.000008
+OpenMP,2,0.000008
+OpenMP,3,0.000058
+OpenMP,3,0.000038
+OpenMP,3,0.000033
+OpenMP,3,0.000034
+OpenMP,3,0.000033
+OpenMP,4,0.000362
+OpenMP,4,0.000298
+OpenMP,4,0.000298
+OpenMP,4,0.000295
+OpenMP,4,0.000295
+OpenMP,5,0.003373
+OpenMP,5,0.002916
+OpenMP,5,0.002919
+OpenMP,5,0.002930
+OpenMP,5,0.002914
+OpenMP,6,0.030506
+OpenMP,6,0.029286
+OpenMP,6,0.029391
+OpenMP,6,0.029267
+OpenMP,6,0.029224
+OpenMP,7,0.312823
+OpenMP,7,0.306254
+OpenMP,7,0.304037
+OpenMP,7,0.292587
+OpenMP,7,0.292398
+OpenMP,8,3.013852
+OpenMP,8,2.926562
+OpenMP,8,3.378656
+OpenMP,8,2.977783
+OpenMP,8,2.981699
+OpenMP,9,31.234143
+OpenMP,9,30.436622
+OpenMP,9,30.537266
+OpenMP,9,30.308672
+OpenMP,9,30.786305
 MPI 4 workers
-Host 0 -- ip 10.100.8.45 -- ranks 0 - 3
+Host 0 -- ip 10.100.8.47 -- ranks 0 - 3
 
  host | 0
 ======|======
@@ -106,28 +126,48 @@ Host 0 -- ip 10.100.8.45 -- ranks 0 - 3
 
  Prot -  All Intra-node communication is: SHM
 
-OpenMP,6,0.014567
-OpenMP,6,0.012474
-OpenMP,6,0.012211
-OpenMP,6,0.012173
-OpenMP,6,0.012187
-OpenMP,7,0.177272
-OpenMP,7,0.243234
-OpenMP,7,0.233831
-OpenMP,7,0.110823
-OpenMP,7,0.110805
-OpenMP,8,1.202303
-OpenMP,8,1.091775
-OpenMP,8,1.112571
-OpenMP,8,1.134618
-OpenMP,8,1.129617
-OpenMP,9,13.353419
-OpenMP,9,12.009769
-OpenMP,9,12.016871
-OpenMP,9,12.019061
-OpenMP,9,12.016156
+OpenMP,2,0.000128
+OpenMP,2,0.000041
+OpenMP,2,0.000014
+OpenMP,2,0.000009
+OpenMP,2,0.000008
+OpenMP,3,0.000074
+OpenMP,3,0.000028
+OpenMP,3,0.000026
+OpenMP,3,0.000023
+OpenMP,3,0.000022
+OpenMP,4,0.000267
+OpenMP,4,0.000170
+OpenMP,4,0.000175
+OpenMP,4,0.000166
+OpenMP,4,0.000165
+OpenMP,5,0.002355
+OpenMP,5,0.001625
+OpenMP,5,0.001633
+OpenMP,5,0.001624
+OpenMP,5,0.001612
+OpenMP,6,0.018198
+OpenMP,6,0.016089
+OpenMP,6,0.016039
+OpenMP,6,0.016017
+OpenMP,6,0.016037
+OpenMP,7,0.179481
+OpenMP,7,0.169516
+OpenMP,7,0.169620
+OpenMP,7,0.169746
+OpenMP,7,0.169675
+OpenMP,8,1.533437
+OpenMP,8,1.199108
+OpenMP,8,1.198699
+OpenMP,8,1.198361
+OpenMP,8,1.199377
+OpenMP,9,13.025024
+OpenMP,9,12.015265
+OpenMP,9,11.782909
+OpenMP,9,12.404393
+OpenMP,9,11.887191
 MPI 8 workers
-Host 0 -- ip 10.100.8.45 -- ranks 0 - 7
+Host 0 -- ip 10.100.8.47 -- ranks 0 - 7
 
  host | 0
 ======|======
@@ -135,28 +175,48 @@ Host 0 -- ip 10.100.8.45 -- ranks 0 - 7
 
  Prot -  All Intra-node communication is: SHM
 
-OpenMP,6,0.010684
-OpenMP,6,0.005888
-OpenMP,6,0.005626
-OpenMP,6,0.005623
-OpenMP,6,0.005616
-OpenMP,7,0.075216
-OpenMP,7,0.063584
-OpenMP,7,0.063675
-OpenMP,7,0.063535
-OpenMP,7,0.063511
-OpenMP,8,0.743160
-OpenMP,8,0.634577
-OpenMP,8,0.634379
-OpenMP,8,0.639649
-OpenMP,8,0.635264
-OpenMP,9,7.324896
-OpenMP,9,6.348577
-OpenMP,9,6.348276
-OpenMP,9,6.348300
-OpenMP,9,6.352411
+OpenMP,2,0.000147
+OpenMP,2,0.000021
+OpenMP,2,0.000041
+OpenMP,2,0.000020
+OpenMP,2,0.000016
+OpenMP,3,0.000073
+OpenMP,3,0.000032
+OpenMP,3,0.000023
+OpenMP,3,0.000024
+OpenMP,3,0.000051
+OpenMP,4,0.000184
+OpenMP,4,0.000093
+OpenMP,4,0.000089
+OpenMP,4,0.000089
+OpenMP,4,0.000089
+OpenMP,5,0.001405
+OpenMP,5,0.000811
+OpenMP,5,0.000809
+OpenMP,5,0.000801
+OpenMP,5,0.000805
+OpenMP,6,0.011383
+OpenMP,6,0.008034
+OpenMP,6,0.007907
+OpenMP,6,0.007905
+OpenMP,6,0.007911
+OpenMP,7,0.097745
+OpenMP,7,0.085130
+OpenMP,7,0.085023
+OpenMP,7,0.085013
+OpenMP,7,0.085082
+OpenMP,8,0.762994
+OpenMP,8,0.612588
+OpenMP,8,0.634686
+OpenMP,8,0.636405
+OpenMP,8,0.636622
+OpenMP,9,7.135807
+OpenMP,9,6.100246
+OpenMP,9,6.980836
+OpenMP,9,6.499413
+OpenMP,9,6.817294
 MPI 16 workers
-Host 0 -- ip 10.100.8.45 -- ranks 0 - 15
+Host 0 -- ip 10.100.8.47 -- ranks 0 - 15
 
  host | 0
 ======|======
@@ -164,28 +224,48 @@ Host 0 -- ip 10.100.8.45 -- ranks 0 - 15
 
  Prot -  All Intra-node communication is: SHM
 
-OpenMP,6,0.009032
-OpenMP,6,0.005115
-OpenMP,6,0.004975
-OpenMP,6,0.004880
-OpenMP,6,0.004832
-OpenMP,7,0.068151
-OpenMP,7,0.051928
-OpenMP,7,0.051778
-OpenMP,7,0.051915
-OpenMP,7,0.052060
-OpenMP,8,0.640945
-OpenMP,8,0.520773
-OpenMP,8,0.520416
-OpenMP,8,0.520944
-OpenMP,8,0.520195
-OpenMP,9,6.377666
-OpenMP,9,5.186217
-OpenMP,9,5.040713
-OpenMP,9,4.813966
-OpenMP,9,4.335352
+OpenMP,2,0.000345
+OpenMP,2,0.000052
+OpenMP,2,0.000139
+OpenMP,2,0.000031
+OpenMP,2,0.000031
+OpenMP,3,0.000061
+OpenMP,3,0.000036
+OpenMP,3,0.000035
+OpenMP,3,0.000035
+OpenMP,3,0.000034
+OpenMP,4,0.000221
+OpenMP,4,0.000087
+OpenMP,4,0.000085
+OpenMP,4,0.000083
+OpenMP,4,0.000083
+OpenMP,5,0.001107
+OpenMP,5,0.000507
+OpenMP,5,0.000515
+OpenMP,5,0.000510
+OpenMP,5,0.000510
+OpenMP,6,0.009591
+OpenMP,6,0.005012
+OpenMP,6,0.004831
+OpenMP,6,0.004902
+OpenMP,6,0.004938
+OpenMP,7,0.065842
+OpenMP,7,0.050745
+OpenMP,7,0.050833
+OpenMP,7,0.050910
+OpenMP,7,0.050853
+OpenMP,8,0.695910
+OpenMP,8,0.554795
+OpenMP,8,0.512119
+OpenMP,8,0.498372
+OpenMP,8,0.495885
+OpenMP,9,6.120742
+OpenMP,9,4.981047
+OpenMP,9,4.995752
+OpenMP,9,5.025408
+OpenMP,9,5.095231
 MPI 32 workers
-Host 0 -- ip 10.100.8.45 -- ranks 0 - 31
+Host 0 -- ip 10.100.8.47 -- ranks 0 - 31
 
  host | 0
 ======|======
@@ -193,26 +273,46 @@ Host 0 -- ip 10.100.8.45 -- ranks 0 - 31
 
  Prot -  All Intra-node communication is: SHM
 
-OpenMP,6,0.037675
-OpenMP,6,0.031237
-OpenMP,6,0.031167
-OpenMP,6,0.032187
-OpenMP,6,0.024051
-OpenMP,7,0.091734
-OpenMP,7,0.067516
-OpenMP,7,0.060589
-OpenMP,7,0.063702
-OpenMP,7,0.059066
-OpenMP,8,0.690275
-OpenMP,8,0.519832
-OpenMP,8,0.531311
-OpenMP,8,0.520701
-OpenMP,8,0.550228
-OpenMP,9,5.807313
-OpenMP,9,4.446408
-OpenMP,9,4.616027
-OpenMP,9,3.623678
-OpenMP,9,4.524694
+OpenMP,2,0.058924
+OpenMP,2,0.050010
+OpenMP,2,0.025002
+OpenMP,2,0.044744
+OpenMP,2,0.044262
+OpenMP,3,0.025999
+OpenMP,3,0.025008
+OpenMP,3,0.025009
+OpenMP,3,0.025010
+OpenMP,3,0.025010
+OpenMP,4,0.000167
+OpenMP,4,0.000101
+OpenMP,4,0.000088
+OpenMP,4,0.000087
+OpenMP,4,0.000086
+OpenMP,5,0.001063
+OpenMP,5,0.000370
+OpenMP,5,0.000377
+OpenMP,5,0.000360
+OpenMP,5,0.000368
+OpenMP,6,0.007065
+OpenMP,6,0.003735
+OpenMP,6,0.003812
+OpenMP,6,0.003640
+OpenMP,6,0.003770
+OpenMP,7,0.064216
+OpenMP,7,0.036566
+OpenMP,7,0.036550
+OpenMP,7,0.051889
+OpenMP,7,0.054222
+OpenMP,8,0.555855
+OpenMP,8,0.391912
+OpenMP,8,0.396045
+OpenMP,8,0.375660
+OpenMP,8,0.379416
+OpenMP,9,4.794165
+OpenMP,9,3.735500
+OpenMP,9,3.735979
+OpenMP,9,3.888435
+OpenMP,9,4.109843
 
 
 PS:

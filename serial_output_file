@@ -1,12 +1,12 @@
-Sender: LSF System <lsfadmin@compute-0-004>
-Subject: Job 600160: <Catalano-serial> in cluster <mghpcc_cluster1> Exited
+Sender: LSF System <lsfadmin@compute-0-007>
+Subject: Job 602033: <Catalano-serial> in cluster <mghpcc_cluster1> Exited
 
 Job <Catalano-serial> was submitted from host <discovery2> by user <catalano.d> in cluster <mghpcc_cluster1>.
-Job was executed on host(s) <compute-0-004>, in queue <ht-10g>, as user <catalano.d> in cluster <mghpcc_cluster1>.
+Job was executed on host(s) <compute-0-007>, in queue <ht-10g>, as user <catalano.d> in cluster <mghpcc_cluster1>.
 </home/catalano.d> was used as the home directory.
 </home/catalano.d/PaStA> was used as the working directory.
-Started at Thu Mar 10 10:52:14 2016
-Results reported at Thu Mar 10 10:57:13 2016
+Started at Sat Mar 12 13:43:35 2016
+Results reported at Sat Mar 12 13:48:37 2016
 
 Your job looked like:
 
@@ -31,9 +31,9 @@ Exited with exit code 19.
 
 Resource usage summary:
 
-    CPU time :               298.73 sec.
+    CPU time :               300.88 sec.
     Max Memory :             7633 MB
-    Average Memory :         5440.10 MB
+    Average Memory :         5452.00 MB
     Total Requested Memory : -
     Delta Memory :           -
     (Delta: the difference between total requested memory and actual max usage.)
@@ -45,26 +45,46 @@ Resource usage summary:
 The output (if any) follows:
 
 Serial
+Serial,2,0.000000
+Serial,2,0.000000
+Serial,2,0.000000
+Serial,2,0.000000
+Serial,2,0.000000
+Serial,3,0.000000
+Serial,3,0.000000
+Serial,3,0.000000
+Serial,3,0.000000
+Serial,3,0.000000
+Serial,4,0.000000
+Serial,4,0.000000
+Serial,4,0.000000
+Serial,4,0.000000
+Serial,4,0.000000
+Serial,5,0.010000
+Serial,5,0.000000
+Serial,5,0.000000
+Serial,5,0.010000
+Serial,5,0.000000
 Serial,6,0.030000
-Serial,6,0.070000
-Serial,6,0.060000
-Serial,6,0.060000
-Serial,6,0.070000
-Serial,7,0.580000
-Serial,7,0.350000
+Serial,6,0.020000
+Serial,6,0.030000
+Serial,6,0.030000
+Serial,6,0.020000
 Serial,7,0.280000
-Serial,7,0.290000
 Serial,7,0.280000
-Serial,8,2.820000
-Serial,8,2.820000
-Serial,8,2.830000
-Serial,8,2.820000
-Serial,8,2.820000
-Serial,9,28.220000
-Serial,9,28.250000
-Serial,9,28.230000
-Serial,9,27.730000
-Serial,9,27.740000
+Serial,7,0.280000
+Serial,7,0.270000
+Serial,7,0.280000
+Serial,8,2.770000
+Serial,8,2.780000
+Serial,8,2.770000
+Serial,8,3.120000
+Serial,8,2.930000
+Serial,9,28.880000
+Serial,9,28.410000
+Serial,9,28.520000
+Serial,9,28.750000
+Serial,9,28.750000
 
 
 PS:
