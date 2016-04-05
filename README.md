@@ -21,9 +21,13 @@ OpenMP:  gcc -fopenmp -o OpenMPPaStA OpenMPPaStA.c rngs.o rvgs.o -lm
 For Serial Implementation:
 Serial:  gcc -o SerialPaStA SerialPaStA.c rngs.o rvgs.o -lm
 
+For OpenACC Implementation:
+OpenACC  gcc OpenACCPaStA.c -fopenacc -foffload=nvptx-none -foffload="-O3" -O3 -o OpenACCPaStA.x -lm
+
 Running Instructions:
 Enter the bash for the execution type desired:
 CUDA:   cuda_all.bash       -> cuda_all_output_file
 MPI:    mpi.bash            -> mpi_output_file
 OpenMP: openmp.bash         -> openmp_output_file
 Serial: serial.bash         -> serial_output_file
+OpenACC: openacc.bash       -> openacc_output_file
