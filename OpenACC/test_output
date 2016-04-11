@@ -1,0 +1,67 @@
+Sender: LSF System <lsfadmin@compute-2-153>
+Subject: Job 629339: <Catalano-test> in cluster <mghpcc_cluster1> Done
+
+Job <Catalano-test> was submitted from host <discovery4> by user <catalano.d> in cluster <mghpcc_cluster1>.
+Job was executed on host(s) <compute-2-153>, in queue <par-gpu>, as user <catalano.d> in cluster <mghpcc_cluster1>.
+</home/catalano.d> was used as the home directory.
+</home/catalano.d/PaStA/OpenACC> was used as the working directory.
+Started at Sat Apr  9 10:57:16 2016
+Results reported at Sat Apr  9 10:57:55 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J Catalano-test
+#BSUB -q par-gpu
+#BSUB -o test_output
+#BSUB -e error_file
+#BSUB -n 1
+#BSUB -R span[ptile=32]
+work=/home/catalano.d/PaStA/OpenACC
+cd $work
+
+rm test_output
+rm error_file
+
+./OpenACCPaStA.x
+
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               34.54 sec.
+    Max Memory :             3213 MB
+    Average Memory :         1081.67 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               4055 MB
+
+    Max Processes :          4
+    Max Threads :            5
+
+The output (if any) follows:
+
+Here are the results:
+Mean: 2.500251
+Standard Deviation: 0.498745
+-4 stds: 0.000000
+-3 stds: 0.020910
+-2 stds: 0.145700
+-1 stds: 0.333260
+1 stds: 0.332500
+2 stds: 0.147160
+3 stds: 0.020470
+4 stds: 0.000000
+time: 0.197780
+
+
+PS:
+
+Read file <error_file> for stderr output of this job.
+

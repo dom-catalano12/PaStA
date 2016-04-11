@@ -1,0 +1,76 @@
+Sender: LSF System <lsfadmin@compute-2-135>
+Subject: Job 622624: <Catalano-openacc> in cluster <mghpcc_cluster1> Done
+
+Job <Catalano-openacc> was submitted from host <discovery4> by user <catalano.d> in cluster <mghpcc_cluster1>.
+Job was executed on host(s) <compute-2-135>, in queue <par-gpu>, as user <catalano.d> in cluster <mghpcc_cluster1>.
+</home/catalano.d> was used as the home directory.
+</home/catalano.d/PaStA> was used as the working directory.
+Started at Mon Apr  4 21:56:09 2016
+Results reported at Mon Apr  4 21:58:12 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J Catalano-openacc
+#BSUB -q par-gpu
+#BSUB -o openacc_output_file
+#BSUB -e error_file
+#BSUB -n 1
+#BSUB -R span[ptile=32]
+work=/home/catalano.d/PaStA/OpenACC
+cd $work
+
+./OpenACCPaStA.x
+
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               121.92 sec.
+    Max Memory :             3898 MB
+    Average Memory :         2713.11 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between total requested memory and actual max usage.)
+    Max Swap :               163957 MB
+
+    Max Processes :          4
+    Max Threads :            6
+
+The output (if any) follows:
+
+OpenACC,6,0.001153
+OpenACC,6,0.001158
+OpenACC,6,0.001166
+OpenACC,6,0.001148
+OpenACC,6,0.001152
+OpenACC,6,0.001148
+OpenACC,7,0.006057
+OpenACC,7,0.006063
+OpenACC,7,0.006057
+OpenACC,7,0.006066
+OpenACC,7,0.006055
+OpenACC,7,0.006058
+OpenACC,8,0.060131
+OpenACC,8,0.060150
+OpenACC,8,0.060163
+OpenACC,8,0.060125
+OpenACC,8,0.060128
+OpenACC,8,0.060171
+OpenACC,9,0.600906
+OpenACC,9,0.600719
+OpenACC,9,0.600749
+OpenACC,9,0.600687
+OpenACC,9,0.600637
+OpenACC,9,0.600774
+
+
+PS:
+
+Read file <error_file> for stderr output of this job.
+

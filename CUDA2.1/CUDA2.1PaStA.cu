@@ -9,11 +9,11 @@
 
 // cuda error function
 #define checkCuda(err) (CheckCuda(err, __FILE__, __LINE__))
-static void CheckCuda(cudaError_t result, const char *file, int line)
+static void CheckCuda(cudaError_t cudaresult, const char *file, int line)
 {
 
-	if (result != cudaSuccess) {
-		printf("%s in %s at line %d\n", cudaGetErrorString(result),
+	if (cudaresult != cudaSuccess) {
+		printf("%s in %s at line %d\n", cudaGetErrorString(cudaresult),
 			file, line);
 		exit(EXIT_FAILURE);
 	}
