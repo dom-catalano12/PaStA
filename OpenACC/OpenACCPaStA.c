@@ -124,7 +124,7 @@ if(suppressOutput == 0) {
 	}
 }
 	gettimeofday(&endtime,NULL);
-	runTime=(1000000*(endtime.tv_sec-starttime.tv_sec)+endtime.tv_usec-starttime.tv_usec)/10000000.0;
+	runTime=(1000000*(endtime.tv_sec-starttime.tv_sec)+endtime.tv_usec-starttime.tv_usec)/1000000.0;
    if(suppressOutput == 0) printf("time: %f\n",runTime);
   	return runTime;
 }
